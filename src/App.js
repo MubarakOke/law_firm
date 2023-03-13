@@ -59,7 +59,7 @@ function App() {
 
   const renderAchievementCard= ()=>{
     return achievementContent.map((item, index)=>{
-      return <div className="mr-[32px]"><AchievementCard key={index} value={item.value} info={item.info} /></div>
+      return <div className="mr-[42px]"><AchievementCard key={index} value={item.value} info={item.info} /></div>
     })
   }
 
@@ -84,35 +84,35 @@ function App() {
   }
 
   return (
-    <div className="font-['Lato'] text-[20px]">
-      <div className="flex justify-end ] items-center text-white contact-info h-[84px] bg-[#004AAD] px-[100px]">
+    <div className="font-['Lato'] text-[16px]">
+      <div className="flex justify-end ] items-center text-white contact-info h-[75px] bg-[#004AAD] px-[100px]">
         <div className="flex items-center">
           <div className="pr-[16px] border-r-2">SERVING THE STATES SINCE 1998</div>
           <div className="flex items-center pl-[16px]">
             <img src={phoneIcon} alt="phone"/>
             <div className="ml-[11px]">(000) - 111 - 1111</div>
           </div>
-          <a className="text-[16px] px-[32px] py-[16px] border-2 rounded-[5px] bg-white text-[#004AAD] border-white ml-[33px]" href="0001111111" target="_blank" rel="noreferrer">CALL NOW</a>
+          <a className="text-[14px] px-[32px] py-[12px] border-2 rounded-[5px] bg-white text-[#004AAD] border-white ml-[33px]" href="0001111111" target="_blank" rel="noreferrer">CALL NOW</a>
         </div>
       </div>
 
-      <div id="home" className="h-[1020px] bg-cover hero">
-        <div className="hero-nav h-[119px] flex justify-between items-center px-[100px]">
-          <img src={logo} alt="logo"/>
+      <div id="home" className="h-[800px] bg-cover hero">
+        <div className="hero-nav h-[65px] flex justify-between items-center px-[100px]">
+          <img className="h-[60px]" src={logo} alt="logo"/>
           <div className="flex text-white">
-            <a href="#home" className="py-[10px] mr-[21px] border-b border-white">HOME</a>
-            <a href="#firm" className="py-[10px] mr-[21px]">OUR FIRM</a>
-            <a href="#practice" className="py-[10px] mr-[21px]">PRACTICE AREAS</a>
-            <a href="#review" className="py-[10px] mr-[21px]">CLIENT REVIEWS</a>
-            <a href="#contact" className="py-[10px]">CONTACT US</a>
+            <a href="#home" className="py-[8px] mr-[21px] border-b border-white">HOME</a>
+            <a href="#firm" className="py-[8px] mr-[21px]">OUR FIRM</a>
+            <a href="#practice" className="py-[8px] mr-[21px]">PRACTICE AREAS</a>
+            <a href="#review" className="py-[8px] mr-[21px]">CLIENT REVIEWS</a>
+            <a href="#contact" className="py-[8px]">CONTACT US</a>
           </div>
         </div>
         <div className="flex justify-center text-white">
           <div className="flex flex-col items-center">
-            <div className="text-[35px] mt-[120px] mb-[55px]">SINCE 1998</div>
-            <div className="text-[60px] py-[19px] px-[200px] border-y border-white mb-[55px]">MORGAN AND ASSOCIATES LAW FIRM</div>
-            <div className="text-[30px] font-thin mb-[88px]">We are thorough, steadfast, and rigorous – every case, every client, every single time. </div>
-            <a href="#contact" className="text-[25px] py-[30px] px-[29px] hover:bg-[#155FC3] bg-[#004AAD] rounded-[8px]">GET A FREE CONSULTATION TODAY</a>
+            <div className="text-[25px] mt-[80px] mb-[35px]">SINCE 1998</div>
+            <div className="text-[45px] py-[19px] px-[200px] border-y border-white mb-[35px]">MORGAN AND ASSOCIATES LAW FIRM</div>
+            <div className="text-[25px] font-thin mb-[80px]">We are thorough, steadfast, and rigorous – every case, every client, every single time. </div>
+            <a href="#contact" className="text-[16px] py-[20px] px-[25px] hover:bg-[#155FC3] bg-[#004AAD] rounded-[8px]">GET A FREE CONSULTATION TODAY</a>
           </div>
         </div>
       </div>
@@ -121,19 +121,19 @@ function App() {
         <div className="flex justify-center mt-[-100px]">
           {renderAchievementCard()}
         </div>
-        <div className="text-center text-[20px] text-['PT Serif'] mt-[27px] italic">The case results contained herein are illustrative of some of the results we have obtained for our clients. Individual case results will vary depending upon the details of each case. </div>
+        <div className="text-center text-[15px] text-['PT Serif'] mt-[27px] italic">The case results contained herein are illustrative of some of the results we have obtained for our clients. Individual case results will vary depending upon the details of each case. </div>
       </div>
 
-      <div className="about mt-[100px] flex justify-center">
+      <div className="about mt-[60px] flex justify-center">
         <div className="flex flex-col items-center">
-          <div className="text-['PT Serif] text-[30px] text-[#155FC3]">About</div>
-          <div className="mt-[22px] text-[55px] font-bold">THE MORGAN AND ASSOCIATES LAW FIRM</div>
-          <div id="firm" className="mt-[23px] w-[100px] border-2 border-[#155FC3]"></div>
-          <div className="mt-[25px] text-[30px] italic">When it comes to handling your case, experience counts.</div>
+          <div className="text-['PT Serif] text-[22px] text-[#155FC3]">About</div>
+          <div className="mt-[10px] text-[40px] font-bold">THE MORGAN AND ASSOCIATES LAW FIRM</div>
+          <div id="firm" className="mt-[10px] w-[75px] border-2 border-[#155FC3]"></div>
+          <div className="mt-[25px] text-[22px] italic">When it comes to handling your case, experience counts.</div>
         </div>
       </div>
 
-      <div className="h-[263px] px-[160px] py-[60px] flex justify-between recognition mt-[70px]">
+      <div className="h-[213px] px-[90px] py-[60px] flex justify-between recognition mt-[35px]">
         <img src={award1} alt="award1" />
         <img src={award2} alt="award2" />
         <img src={award3} alt="award3" />
@@ -143,46 +143,45 @@ function App() {
         <img src={award7} alt="award7" />
       </div>
 
-      <div className="story flex pl-[82px] mt-[88px]">
-        <div className="w-[800px] mr-[100px]">
-          <div className="text-[50px] font-bold text-['PT Serif']">Our Story</div>
-          <div className="mt-[55px] text-[30px]">
+      <div className="story flex pl-[82px] mt-[80px]">
+        <div className="w-[600px] mr-[100px]">
+          <div className="text-[35px] font-bold text-['PT Serif']">Our Story</div>
+          <div className="mt-[25px] text-[20px]">
           Our law firm has a reputation for excellence in handling even the most complex legal cases. One of our early successes was an immigration case involving a young man seeking asylum. Despite the challenges, we fought tirelessly for our client's rights, and ultimately achieved a successful outcome. Since then, our firm has become known for our dedication to clients, no matter how difficult the case may be
           </div>
         </div>
-
         <div>
-          <div className="mt-[115px] flex storycard text-white">
-            <img className="mt-[-100px]" src={storyCard} alt="storyCard"/>
-            <div className="ml-[66px] mt-[57px]">
-              <div className="text-[35px] font-bold text-['PT Serif']">Wesley B. Morgan</div>
-              <div className="text-[28px] mt-[20px]">Since establishing the law firm in 1998, Wesley B. Morgan has committed himself to providing the best possible legal representation to his clients. </div>
-              <div className="text-[28px] mt-[40px]">Since its inception, The Morgan and Associates Law Firm has and continues to follow a simple, time-tested principle – “Take Care of People.”</div>
+          <div className="mt-[60px] flex storycard text-white">
+            <img className="mt-[-90px] ml-[40px] h-[490px] w-[680px]" src={storyCard} alt="storyCard"/>
+            <div className="ml-[60px] mt-[47px]">
+              <div className="text-[25px] font-bold text-['PT Serif']">Wesley B. Morgan</div>
+              <div className="text-[20px] w-[400px] mr-[35px] mt-[20px]">Since establishing the law firm in 1998, Wesley B. Morgan has committed himself to providing the best possible legal representation to his clients. </div>
+              <div className="text-[20px] w-[400px] mr-[35px] mt-[40px] mb-[70px]">Since its inception, The Morgan and Associates Law Firm has and continues to follow a simple, time-tested principle – “Take Care of People.”</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='mission relative mt-[187px]'>
-        <div className="px-[90px] py-[34px] absolute left-[82px] top-[-90px]  inline-block text-['PT Serif'] bg-[#155FC3] text-[50px] font-bold text-white">Our Mission</div>
-        <div className="service-bg h-[850px] bg-cover pt-[41px]">
-          <div className="w-[90%] mx-auto mt-[95px] bg-white p-[55px]">
-            <div className="text-[40px] text-center">Morgan & Associates is a highly reputable law firm known for its expertise in complex legal cases. Our dedication to excellence is demonstrated by the success we've achieved for our clients, including a family seeking asylum in the United States.</div>
-            <div className="mt-[35px] text-center text-[40px]">With attorneys in three New York City locations and licensed to practice immigration law in all 50 U.S. states, we provide top-notch legal services in immigration, bankruptcy, criminal law, divorce, and family law. Our commitment to our clients' well-being is what sets us apart and makes us one of the most reputable law firms in the country</div>
+      <div className='mission relative mt-[157px]'>
+        <div className="px-[40px] py-[22px] absolute left-[62px] top-[-60px]  inline-block text-['PT Serif'] bg-[#155FC3] text-[30px] font-bold text-white">Our Mission</div>
+        <div className="service-bg h-[660px] bg-cover pt-[5px]">
+          <div className="w-[82%] mx-auto mt-[95px] bg-white p-[55px]">
+            <div className="text-[23px] w-[72%] mx-auto text-center">Morgan & Associates is a highly reputable law firm known for its expertise in complex legal cases. Our dedication to excellence is demonstrated by the success we've achieved for our clients, including a family seeking asylum in the United States.</div>
+            <div className="mt-[35px]  w-[72%] mx-auto text-center text-[23px]">With attorneys in three New York City locations and licensed to practice immigration law in all 50 U.S. states, we provide top-notch legal services in immigration, bankruptcy, criminal law, divorce, and family law. Our commitment to our clients' well-being is what sets us apart and makes us one of the most reputable law firms in the country</div>
           </div>
         </div>
       </div>
 
-      <div className="chooseUS pt-[150px] h-[900px] bg-cover">
+      <div className="chooseUS pt-[120px] h-[630px] bg-cover">
         <div className="relative">
-          <div className="px-[90px] py-[34px] left-[82px] top-[-90px] absolute inline-block text-['PT Serif'] bg-white text-[50px] font-bold text-[#155FC3]">WHY CHOOSE US</div>
-          <div className='w-[80%] chooseCard py-[123px] px-[100px] text-white'>
+          <div className="px-[40px] py-[22px] left-[62px] top-[-60px] absolute inline-block text-['PT Serif'] bg-white text-[30px] font-bold text-[#155FC3]">WHY CHOOSE US</div>
+          <div className='w-[75%] chooseCard py-[70px] px-[100px] text-white'>
             <div className="flex items-start">
-              <div className="w-[119px] border-b mt-6 border-white mr-[35px]"></div>
-              <div className="italic text-[36px]">We are thorough, steadfast, and rigorous – every case, every client, every single time. </div>
+              <div className="w-[110px] border-b mt-6 border-white mr-[35px]"></div>
+              <div className="italic text-[23px]">We are thorough, steadfast, and rigorous – every case, every client, every single time. </div>
             </div>
             <div>
-              <ul className="text-[36px] list-disc mt-[30px]">
+              <ul className="text-[23px] list-disc mt-[30px]">
                 <li>Reputation: We have a reputation for excellence in handling highly complex legal cases</li>
                 <li>Convenience: With attorneys in three New York City locations, we make it easy for clients to access our services.</li>
                 <li>Dedication: We are dedicated to achieving successful outcomes for our clients and fighting for their rights, no matter how difficult the case may be.</li>
@@ -193,28 +192,28 @@ function App() {
       </div>
 
       <div className="practice">
-        <div className="mt-[100px] flex justify-center">
+        <div className="mt-[60px] flex justify-center">
           <div className="flex flex-col items-center">
-            <div className="text-['PT Serif] text-[30px] text-[#155FC3]">Our Services</div>
-            <div className="mt-[22px] text-[55px] font-bold">PRACTICE AREAS</div>
-            <div id="practice" className="mt-[23px] w-[100px] border-2 border-[#155FC3]"></div>
-            <div className="mt-[25px] text-[30px] italic">In each area of service that we offer, we promise that you will receive the very best legal representation in the industry.</div>
+            <div className="text-['PT Serif] text-[33px] text-[#155FC3]">Our Services</div>
+            <div className="mt-[10px] text-[40px] font-bold">PRACTICE AREAS</div>
+            <div id="practice" className="mt-[10px] w-[75px] border-2 border-[#155FC3]"></div>
+            <div className="mt-[25px] text-[22px] italic">In each area of service that we offer, we promise that you will receive the very best legal representation in the industry.</div>
           </div>
         </div>
-        <div className="w-[90%] mx-auto mt-[56px] text-white">
+        <div className="w-[90%] mx-auto mt-[35px] text-white">
           <div className="flex justify-center">
-            <div className="card1 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[360px] h-[350px] mr-[40px] pt-[280px] pl-[112px] rounded-[14px] bg-cover">
+            <div className="card1 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[295px] h-[290px] mr-[25px] pt-[220px] pl-[112px] rounded-[14px] bg-cover">
               <div>IMMIGRATION</div>
             </div>
-            <div className="card2 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[360px] h-[350px] pt-[280px] pl-[112px] rounded-[14px] bg-cover">
+            <div className="card2 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[295px] h-[290px] pt-[220px] pl-[112px] rounded-[14px] bg-cover">
               <div>BANKRUPTCY</div>
             </div>
           </div>
-          <div className="flex mt-[35px] justify-center">
-            <div className="card3 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[360px] h-[350px] pt-[280px] pl-[112px] mr-[40px] rounded-[14px] bg-cover">
+          <div className="flex mt-[20px] justify-center">
+            <div className="card3 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[295px] h-[290px] mr-[25px] pt-[220px] pl-[112px] rounded-[14px] bg-cover">
               <div>CRIMINAL</div>
             </div>
-            <div className="card4 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[360px] h-[350px] pt-[280px] pl-[112px] rounded-[14px] bg-cover">
+            <div className="card4 w-[45%] hover:shadow-[1px_-2px_51px_-12px_rgba(0,0,0,0.25)] hover:w-[46%] hover:h-[295px] h-[290px] pt-[220px] pl-[112px] rounded-[14px] bg-cover">
               <div>DIVORCE AND FAMILY</div>
             </div>
           </div>
@@ -222,47 +221,47 @@ function App() {
       </div>
 
       <div className="team">
-        <div className="mt-[100px] flex justify-center">
+        <div className="mt-[60px] flex justify-center">
           <div className="flex flex-col items-center">
-            <div className="text-['PT Serif] text-[30px] text-[#155FC3]">Our Firm</div>
-            <div className="mt-[22px] text-[55px] font-bold">MEET OUR TEAM</div>
-            <div className="mt-[23px] w-[100px] border-2 border-[#155FC3]"></div>
-            <div className="mt-[25px] text-[30px] italic">Expert legal team at Morgan & Associates. Trust us for immigration, bankruptcy, criminal law, divorce, and family law.</div>
+            <div className="text-['PT Serif] text-[33px] text-[#155FC3]">Our Firm</div>
+            <div className="mt-[10px] text-[40px] font-bold">MEET OUR TEAM</div>
+            <div className="mt-[10px] w-[75px] border-2 border-[#155FC3]"></div>
+            <div className="mt-[25px] text-[22px] italic">Expert legal team at Morgan & Associates. Trust us for immigration, bankruptcy, criminal law, divorce, and family law.</div>
           </div>
         </div>
-        <div className="w-[85%] mt-[70px] mx-auto">
+        <div className="w-[85%] mt-[35px] mx-auto">
           <img src={team} alt="team"/>
         </div>
       </div>
 
       <div className="review">
-        <div className="mt-[100px] flex justify-center">
+        <div className="mt-[60px] flex justify-center">
           <div className="flex flex-col items-center">
-            <div className="text-['PT Serif] text-[30px] text-[#155FC3]">Client Review</div>
-            <div className="mt-[22px] text-[55px] font-bold">REAL CLIENT STORIES</div>
-            <div id="review" className="mt-[23px] w-[100px] border-2 border-[#155FC3]"></div>
+            <div className="text-['PT Serif] text-[33px] text-[#155FC3]">Client Review</div>
+            <div className="mt-[10px] text-[40px] font-bold">REAL CLIENT STORIES</div>
+            <div id="review" className="mt-[10px] w-[75px] border-2 border-[#155FC3]"></div>
           </div>
         </div>
-        <div className="reviewBox mt-[58px] h-[650px] bg-cover">
-          <div className='w-[55%] mx-auto bg-white p-[50px] rounded-b-[20px]'>
-            <div className="text-center italic text-[35px] h-[220px] text-[#004AAD]">"{review.review}"</div>
-            <div className="flex justify-between mt-[85px]">
-              <img onClick={handleLeftReviewButoonClick} className="cursor-pointer" src={leftButton} alt="left"/>
-              <div className="text-[35px] font-bold text-[#004AAD]">{review.name}</div>
-              <img onClick={handleRightReviewButoonClick} className="cursor-pointer" src={rightButton} alt="left"/>
+        <div className="reviewBox mt-[58px] h-[550px] bg-cover">
+          <div className='w-[50%] mx-auto bg-white p-[50px] rounded-b-[20px]'>
+            <div className="text-center italic text-[25px] h-[130px] text-[#004AAD]">"{review.review}"</div>
+            <div className="flex justify-between items-center mt-[75px]">
+              <img onClick={handleLeftReviewButoonClick} className="cursor-pointer h-[55px] w-[60px]" src={leftButton} alt="left"/>
+              <div className="text-[28px] font-bold text-[#004AAD]">{review.name}</div>
+              <img onClick={handleRightReviewButoonClick} className="cursor-pointer h-[55px] w-[60px]" src={rightButton} alt="left"/>
             </div>
           </div>
         </div>
       </div>
 
       <div className="contact">
-        <div className="mt-[100px] flex justify-center">
+        <div className="mt-[60px] flex justify-center">
           <div className="flex flex-col items-center">
-            <div className="mt-[22px] text-[45px] font-bold">CONTACT US FOR A FREE CONSULTATION</div>
-            <div id="contact" className="mt-[23px] w-[100px] border-2 border-[#155FC3]"></div>
+            <div className="mt-[10px] text-[40px] font-bold">CONTACT US FOR A FREE CONSULTATION</div>
+            <div id="contact" className="mt-[10px] w-[75px] border-2 border-[#155FC3]"></div>
           </div>
         </div>
-        <div className="form mt-[70px]">
+        <div className="form mt-[30px]">
           <div className="w-[55%] mx-auto">
             <div className="flex">
               <input className="w-[100%] px-[20px] py-[15px] font-light mr-[20px] border border-black" placeholder="First name" />
@@ -285,34 +284,34 @@ function App() {
             <div className="flex mt-[25px] items-center border border-black">
               <textarea className="w-[100%] px-[20px] py-[15px]" rows="7" placeholder="Your message"></textarea>
             </div>
-            <button className="w-[100%] mt-[70px] bg-[#004AAD] text-white py-[20px] text-center">YES, I'D LIKE A FREE CONSULTATION</button>
+            <button className="w-[100%] mt-[70px] bg-[#004AAD] text-white py-[18px] text-center">YES, I'D LIKE A FREE CONSULTATION</button>
           </div>
         </div>
       </div>
 
-      <div className="footer text-white h-[410px] py-[31px] px-[120px] mt-[70px] bg-cover">
-        <img src={logo} alt="phone"/>
+      <div className="footer text-white h-[310px] py-[24px] px-[120px] mt-[70px] bg-cover">
+        <img className="h-[60px]" src={logo} alt="logo"/>
         <div className="flex mt-[30px] justify-between">
-          <div className="text-[27px]">We stand ready, willing, and able to fight for you every step of the way. </div>
+          <div className="text-[19px]">We stand ready, willing, and able to fight for you every step of the way. </div>
           <div>
-            <div className="text-['PT Serif'] text-[27px]">Find Us</div>
-            <div className="font-light text-[18px] mt-[18px]">123 Main Street, New York, NY 10001</div>
-            <div className="font-light text-[18px] mt-[12px]">124 Main Street, New York, NY 10003</div>
-            <div className="font-light text-[18px] mt-[12px]">125 Main Street, New York, NY 10003</div>
+            <div className="text-['PT Serif'] text-[19px]">Find Us</div>
+            <div className="font-light text-[13px] mt-[18px]">123 Main Street, New York, NY 10001</div>
+            <div className="font-light text-[13px] mt-[12px]">124 Main Street, New York, NY 10003</div>
+            <div className="font-light text-[13px] mt-[12px]">125 Main Street, New York, NY 10003</div>
           </div>
           <div>
-            <div className="text-['PT Serif'] text-[27px]">Contact Us</div>
-            <div className="font-light text-[18px] mt-[18px]">(000)-111-1111 (office)</div>
-            <div className="font-light text-[18px] mt-[12px]">(000)-111-1112 (fax)</div>
+            <div className="text-['PT Serif'] text-[19px]">Contact Us</div>
+            <div className="font-light text-[13px] mt-[18px]">(000)-111-1111 (office)</div>
+            <div className="font-light text-[13px] mt-[12px]">(000)-111-1112 (fax)</div>
           </div>
           <div>
-            <div className="text-['PT Serif'] text-[30px]">About Us</div>
-            <div><a href="#firm" className="font-light text-[18px] mt-[18px]">About our Firm</a></div>
-            <div><a href="#practice" className="font-light text-[18px] mt-[12px]">Practice Areas</a></div>
-            <div><a href="#review" className="font-light text-[18px] mt-[12px]">Client Reviews</a></div>
+            <div className="text-['PT Serif'] text-[19px]">About Us</div>
+            <div><a href="#firm" className="font-light text-[13px] mt-[18px]">About our Firm</a></div>
+            <div><a href="#practice" className="font-light text-[13px] mt-[12px]">Practice Areas</a></div>
+            <div><a href="#review" className="font-light text-[13px] mt-[12px]">Client Reviews</a></div>
           </div>
         </div>
-        <div className="font-light text-[18px] mt-[30px]">© 2023 Morgan and Associates Law Firm. All rights reserved</div>
+        <div className="font-light text-[13px] mt-[30px]">© 2023 Morgan and Associates Law Firm. All rights reserved</div>
       </div>
     </div>
   );
